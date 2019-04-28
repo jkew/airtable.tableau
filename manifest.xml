@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<connector-plugin class='airtable_jdbc' superclass='jdbc' plugin-version='0.0.0' name='Airtable' version='18.1'>
+  <connection-customization class="airtable_jdbc" enabled="true" version="10.0">
+    <vendor name="vendor"/>
+    <driver name="driver"/>
+    <customizations>
+      <customization name='CAP_CREATE_TEMP_TABLES' value='no' />
+      <customization name='CAP_QUERY_SUBQUERIES' value='no' />
+      <customization name='CAP_JDBC_SUPPRESS_ENUMERATE_TABLES' value='yes' />
+      <customization name='CAP_JDBC_SUPPRESS_ENUMERATE_SCHEMA' value='yes' />S
+      <customization name='CAP_JDBC_SUPPRESS_ENUMERATE_DATABASES' value='yes' />
+      <customization name='CAP_EXTRACT_ONLY' value='yes' />
+      <customization name="CAP_SELECT_INTO" value="no"/>
+      <customization name="CAP_SELECT_TOP_INTO" value="no"/>
+      <customization name="CAP_CREATE_TEMP_TABLES" value="no"/>
+      <customization name="CAP_QUERY_BOOLEXPR_TO_INTEXPR" value="no"/>
+      <customization name="CAP_QUERY_GROUP_BY_BOOL" value="no"/>
+      <customization name="CAP_QUERY_GROUP_BY_DEGREE" value="no"/>
+      <customization name="CAP_QUERY_SORT_BY" value="no"/>
+      <customization name="CAP_QUERY_SUBQUERIES" value="no"/>
+      <customization name="CAP_QUERY_TOP_N" value="no"/>
+      <customization name="CAP_QUERY_TOP_SAMPLE" value="no"/>
+      <customization name="CAP_QUERY_TOP_SAMPLE_PERCENT" value="no"/>
+      <customization name="CAP_QUERY_WHERE_FALSE_METADATA" value="no"/>
+      <customization name="CAP_QUERY_SUBQUERIES_WITH_TOP" value="no"/>
+      <customization name="CAP_SUPPORTS_SPLIT_FROM_LEFT" value="no"/>
+      <customization name="CAP_SUPPORTS_SPLIT_FROM_RIGHT" value="no"/>
+      <customization name="CAP_SUPPORTS_UNION" value="no"/>
+      <customization name="CAP_QUERY_ALLOW_PARTIAL_AGGREGATION" value="no"/>
+    </customizations>
+  </connection-customization>
+  <connection-dialog file='connection-dialog.tcd'/>
+  <connection-resolver file="connectionResolver.tdr"/>
+</connector-plugin>
