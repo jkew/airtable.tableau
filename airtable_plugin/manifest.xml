@@ -7,7 +7,6 @@
     <customizations>
       <customization name="CAP_CREATE_TEMP_TABLES" value="no" />
       <customization name="CAP_QUERY_SUBQUERIES" value="no" />
-      <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_TABLES" value="yes" />
       <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_SCHEMA" value="yes" />
       <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_DATABASES" value="yes" />
       <customization name="CAP_EXTRACT_ONLY" value="yes" />
