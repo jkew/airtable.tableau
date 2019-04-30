@@ -1,0 +1,17 @@
+<connection-dialog class='airtable_jdbc'>
+  <connection-config>
+    <authentication-mode value="None" />
+<!--
+    <service-prompt value="Table" />
+	<show-service-prompt value="true" />
+    <show-warehouse-prompt value="true" />
+
+    <extended-properties>
+       <property name="Yes a Prop" value"WHAT"/>
+    </extended-properties>
+    <warehouse-prompt value="Ware" default="house" enabled="true"/>
+-->
+    <db-name-prompt value="Airtable Database: " />
+    <has-pre-connect-database value="true" />
+  </connection-config>
+</connection-dialog>
