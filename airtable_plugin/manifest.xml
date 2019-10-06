@@ -5,16 +5,30 @@
     <vendor name="vendor"/>
     <driver name="driver"/>
     <customizations>
-      <customization name="CAP_CREATE_TEMP_TABLES" value="no" />
-      <customization name="CAP_QUERY_SUBQUERIES" value="no" />
-      <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_SCHEMA" value="yes" />
-      <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_DATABASES" value="yes" />
-      <customization name="CAP_EXTRACT_ONLY" value="yes" />
+
+
+
+      <customization name="CAP_CONNECT_NO_CUSTOM_SQL" value="yes" />
       <customization name="CAP_SELECT_INTO" value="no"/>
       <customization name="CAP_SELECT_TOP_INTO" value="no"/>
-      <customization name="CAP_CREATE_TEMP_TABLES" value="no"/>
-      <customization name="CAP_QUERY_BOOLEXPR_TO_INTEXPR" value="no"/>
-      <customization name="CAP_QUERY_GROUP_BY_BOOL" value="no"/>
+      <customization name="CAP_EXTRACT_ONLY" value="yes" />
+      <customization name="CAP_CREATE_TEMP_TABLES" value="no" />
+      <customization name="CAP_QUERY_SUBQUERIES" value="no" />
+
+      <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_SCHEMA" value="yes" />
+      <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_DATABASES" value="yes" />
+
+<!--
+      <customization name="CAP_SELECT_STAR_ONLY" value="yes"/>
+      <customization name="CAP_LOCAL_ALIASES" value="no" />
+      <customization name="CAP_EXTRACT_USE_RUN_EXTRACT_QUERY_METHOD" value="yes"/>
+
+
+  
+
+      <customization name="CAP_EXTRACT_ONLY_REFRESH" value="yes" />
+
+
       <customization name="CAP_QUERY_GROUP_BY_DEGREE" value="no"/>
       <customization name="CAP_QUERY_SORT_BY" value="no"/>
       <customization name="CAP_QUERY_SUBQUERIES" value="no"/>
@@ -27,8 +41,10 @@
       <customization name="CAP_SUPPORTS_SPLIT_FROM_RIGHT" value="no"/>
       <customization name="CAP_SUPPORTS_UNION" value="no"/>
       <customization name="CAP_QUERY_ALLOW_PARTIAL_AGGREGATION" value="no"/>
+-->
     </customizations>
   </connection-customization>
   <connection-dialog file='connection-dialog.tcd'/>
   <connection-resolver file="connectionResolver.tdr"/>
+  <dialect file='dialect.tdd'/>
 </connector-plugin>

@@ -1,6 +1,6 @@
 <connection-dialog class='airtable_jdbc'>
   <connection-config>
-    <authentication-mode value="None" />
+    <authentication-mode value="PasswordOnly" />
 <!--
     <service-prompt value="Table" />
 	<show-service-prompt value="true" />

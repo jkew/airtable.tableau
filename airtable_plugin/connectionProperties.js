@@ -6,7 +6,7 @@
     // Set connection properties from existing attributes.
     params["key"] = attr[connectionHelper.attributePassword];
     params["base"] = attr[connectionHelper.attributeDatabase];
-    params["table"] = "Breeding%20Plants";
+    //params["table"] = "Breeding%20Plants";
 
     var formattedParams = [];
     for (var key in params) {
